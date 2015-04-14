@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cad="http://schemas.android.com/apk/lib/vn.clevernet.android.sdk"            
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"> 
+   <vn.clevernet.android.sdk.ClevernetView
+			android:id="@+id/cadad"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			cad:backgroundColor="#555"
+			cad:textColor="#FF1F1F"
+			cad:bannerType="mma"
+            cad:animation="fade"
+            cad:textSize="20"
+            cad:deliverOnlyText="false"                     
+		/>
+</LinearLayout>

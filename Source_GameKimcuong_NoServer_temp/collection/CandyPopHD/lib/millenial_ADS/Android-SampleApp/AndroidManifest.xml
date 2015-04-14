@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="com.millennialmedia.android.sampleapp"
+	  android:versionCode="5"
+	  android:versionName="5.0.0">
+	  
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17" />
+	<supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+	<application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+		<activity android:name=".SampleAppTabActivity"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".BannerActivity" android:label="Banner" android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".InterstitialActivity" android:label="Interstitial" android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".BannerXmlActivity" android:label="XML Banner" android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<!-- SDK Activities -->
+		<activity android:name="com.millennialmedia.android.MMActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation|keyboard" >
+		</activity>
+		<activity android:name="com.millennialmedia.android.VideoPlayer"
+			android:configChanges="keyboardHidden|orientation|keyboard" >
+		</activity>
+		
+	</application>
+</manifest>

@@ -1,0 +1,1 @@
+If you are upgrading from version 1.0.20 or earlier,  use the integration manual attached.

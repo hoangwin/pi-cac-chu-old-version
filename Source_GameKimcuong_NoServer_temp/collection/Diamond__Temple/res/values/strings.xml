@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Diamond: Golden Temple</string>
+    <string name="app_name">Diamond: Golden Temple</string>
+    <string name="menu_exit">EXIT</string>
+</resources>
