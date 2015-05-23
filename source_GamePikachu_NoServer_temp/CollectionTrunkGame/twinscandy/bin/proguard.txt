@@ -1,6 +1,0 @@
-# view AndroidManifest.xml #generated:26
--keep class com.google.ads.AdActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:14
--keep class com.xiaxio.twinscandy.TwinsCandy { <init>(...); }
-
